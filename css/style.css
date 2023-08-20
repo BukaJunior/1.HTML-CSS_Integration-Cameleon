@@ -1,0 +1,11 @@
+body {
+    background-color: RGB(47, 56, 72);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: green;
+    color: white;
+    width: 900px;
+    margin: auto;
+}
