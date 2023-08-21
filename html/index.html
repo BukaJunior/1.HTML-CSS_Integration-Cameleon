@@ -17,14 +17,14 @@
     <div class="container">
 
         <header class="header">
-            <h1 class="header__title">J <span class="heartTitle">♡</span> les caméléons!</h1>
+            <h1 class="header__title">J <span class="header__heart">🤍</span> les caméléons!</h1>
             <nav class="header__navbar">
-                <ul>
-                    <li>About</li>
-                    <li>blog</li>
-                    <li>Contact</li>
+                <ul class="header__navleft">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <ul>
+                <ul class="header__navright">
                     <li><a href="#"><img src="../images/twitter_icon.png" alt="Twitter icon"></a></li>
                     <li><a href="#"><img src="../images/facebook_icon.png" alt="facebook icon"></a></li>
                 </ul>
@@ -33,35 +33,56 @@
 
         <main>
             <section class="introduction">
-                <h1 class="introduction__title">Trop de caméléons</h1>
+                <h1 class="introduction__title">Trop de caméléons? nope.</h1>
                 <p class="introduction__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, expedita officia. Sunt aliquam consequatur atque temporibus aut! Modi quasi nihil, molestias voluptatum tempore quia natus tenetur architecto, consequatur cupiditate eaque.</p>
             </section>
 
-            <section class="PictureOfTheWeek">
+            <section class="pictureOfTheWeek">
                 <figure>
-                    <img src="../images/cameleon-big.jpg" alt="cameleon géant">
+                    <img class="pictureOfTheWeek__img" src="../images/cameleon-big.jpg" alt="cameleon géant">
                     <figcaption>Le caméléons de la semaine <span>♡</span></figcaption>
                 </figure>
             </section>
 
-            <section>
-                <div>
+            <section class="gallery">
+                <div class="gallery__img">
                     <!-- Emmet :  img[src="../images/cameleon$$.jpg" alt="Caméléon n°$$"]*20 -->
-
-                    <img src="../images/cameleon01.jpg" alt="Caméléon n°01"><img src="../images/cameleon02.jpg" alt="Caméléon n°02"><img src="../images/cameleon03.jpg" alt="Caméléon n°03"><img src="../images/cameleon04.jpg" alt="Caméléon n°04"><img src="../images/cameleon05.jpg" alt="Caméléon n°05"><img src="../images/cameleon06.jpg" alt="Caméléon n°06"><img src="../images/cameleon07.jpg" alt="Caméléon n°07"><img src="../images/cameleon08.jpg" alt="Caméléon n°08"><img src="../images/cameleon09.jpg" alt="Caméléon n°09"><img src="../images/cameleon10.jpg" alt="Caméléon n°10"><img src="../images/cameleon11.jpg" alt="Caméléon n°11"><img src="../images/cameleon12.jpg" alt="Caméléon n°12"><img src="../images/cameleon13.jpg" alt="Caméléon n°13"><img src="../images/cameleon14.jpg" alt="Caméléon n°14"><img src="../images/cameleon15.jpg" alt="Caméléon n°15"><img src="../images/cameleon16.jpg" alt="Caméléon n°16"><img src="../images/cameleon17.jpg" alt="Caméléon n°17"><img src="../images/cameleon18.jpg" alt="Caméléon n°18"><img src="../images/cameleon19.jpg" alt="Caméléon n°19"><img src="../images/cameleon20.jpg" alt="Caméléon n°20">
-
+                    <img class="gallery_picture" src="../images/cameleon01.jpg" alt="Caméléon n°01">
+                    <img class="gallery_Allpicture" src="../images/cameleon02.jpg" alt="Caméléon n°02">
+                    <img class="gallery_Allpicture" src="../images/cameleon03.jpg" alt="Caméléon n°03">
+                    <img class="gallery_Allpicture" src="../images/cameleon04.jpg" alt="Caméléon n°04">
+                    <img class="gallery_Allpicture" src="../images/cameleon05.jpg" alt="Caméléon n°05">
+                    <img class="gallery_Allpicture" src="../images/cameleon06.jpg" alt="Caméléon n°06">
+                    <img class="gallery_Allpicture" src="../images/cameleon07.jpg" alt="Caméléon n°07">
+                    <img class="gallery_Allpicture" src="../images/cameleon08.jpg" alt="Caméléon n°08">
+                    <img class="gallery_Allpicture" src="../images/cameleon09.jpg" alt="Caméléon n°09">
+                    <img class="gallery_Allpicture" src="../images/cameleon10.jpg" alt="Caméléon n°10">
+                    <img class="gallery_Allpicture" src="../images/cameleon11.jpg" alt="Caméléon n°11">
+                    <img class="gallery_Allpicture" src="../images/cameleon12.jpg" alt="Caméléon n°12">
+                    <img class="gallery_Allpicture" src="../images/cameleon13.jpg" alt="Caméléon n°13">
+                    <img class="gallery_Allpicture" src="../images/cameleon14.jpg" alt="Caméléon n°14">
+                    <img class="gallery_Allpicture" src="../images/cameleon15.jpg" alt="Caméléon n°15">
+                    <img class="gallery_Allpicture" src="../images/cameleon16.jpg" alt="Caméléon n°16">
+                    <img class="gallery_Allpicture" src="../images/cameleon17.jpg" alt="Caméléon n°17">
+                    <img class="gallery_Allpicture" src="../images/cameleon18.jpg" alt="Caméléon n°18">
+                    <img class="gallery_Allpicture" src="../images/cameleon19.jpg" alt="Caméléon n°19">
+                    <img class="gallery_Allpicture" src="../images/cameleon20.jpg" alt="Caméléon n°20">
                 </div>
 
-                <aside>
-                    <h3>Soumettez vos photos de caméléons</h3>
-                    <p>Vous avez trouvé une photo de caméléon tellement mignonneque vous voulez la partager ?</p>
-                    <a href="#">Partagez là ici!</a>
-                    <h3>Inscrivez vous à notre newsletter</h3>
-                    <a href="#">Souscrivez ici</a>
-
+                <aside class="share">
+                    <div class="share__top">
+                        <h3 class="share__title" >Soumettez vos photos de caméléons</h3>
+                        <p class="share__ask">Vous avez trouvé une photo de caméléon tellement mignonneque vous voulez la partager ?
+                        </p>
+                        <p><a class="share__link" href="#">Partagez là ici!</a></p>
+                    </div>
+                    <div class="share__bottom">
+                        <h3 class="share__title" >Inscrivez vous à notre newsletter</h3>
+                        <a class="share__link"  href="#">Souscrivez ici</a>
+                    </div>
+                    
                 </aside>
             </section>
-
         </main>
 
         <footer>
