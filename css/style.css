@@ -6,6 +6,7 @@ body {
 .container {
     color: white;
     width: 80%;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -29,13 +30,15 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
+    gap: .5rem;
 }
 
 .header__navleft a {
     text-decoration: none;
     color: yellowgreen;
     font-weight: bold;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    
     font-size: 1.2rem;
     transition: .4s;
     display: inline-block;
@@ -165,6 +168,24 @@ footer {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+
+    .gallery{
+        display: block;
+    }
+
+    .gallery__img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .share {
+        width: 100%;
+    }
+
+     
 }
 
 /* On nomme le frames apr le nom qu'on veut */
