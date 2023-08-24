@@ -94,19 +94,32 @@ figcaption {
 }
 
 .gallery__img {
-    width: 75%;
+    width: 70%;
     font-size: 0;
     gap: 1rem;
 }
 
 .gallery__img img {
+        /* Comme la margin est extérieure à l'image, elle vient augmenter la taille que prend celle-ci. 4 images à 25% + 5px de margin chacune font plus de la largeur d'une ligne :  la dernière tombe donc à la ligne suivante. 
+        On utilise donc calc pour indique que chaque image fait un quart de la ligne moins la marge.
+        */
     width: calc(25% - 5px );
-    margin-bottom: 5px;
-    margin-right: 5px;
+    /* margin-bottom: 5px;
+    margin-right: 5px; */
+        /* Avec padding  et box-sizing: border-box*/
+        /* Avec border-box, on définit les limites maximales d'un élément et tout padding ou bordure ajoutés se retrouvent à l'intérieur de ces limites. Donc 5x de padding permettent de rétrécir l'image de 5px mais l'ensemble conserve ses 25% de largeur sur la ligne. */
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.gallery img:first-child {
+    width: 48.5%;
+    float: left;
+    padding-bottom: 4px;
 }
 
 .share {
-    width: 30%;
+    width: 25%;
     background-color: #004488;
     padding: 1rem;
 }
