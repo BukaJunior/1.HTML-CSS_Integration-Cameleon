@@ -5,7 +5,7 @@ body {
 
 .container {
     color: white;
-    width: 900px;
+    width: 80%;
     margin: auto;
 }
 
@@ -116,6 +116,7 @@ figcaption {
 .gallery__img img{
     display: inline-block;
     transition: all .5s;
+    width: 100%;
 }
 
 .gallery__img img:hover {
