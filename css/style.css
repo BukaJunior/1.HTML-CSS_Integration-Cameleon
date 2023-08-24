@@ -16,6 +16,7 @@ body {
     border-bottom: #add8e6 4px solid;
     border-radius: 0 0 3px 3px;
     /* box-shadow: 0 .2rem #add8e6; */
+    animation: heartCameleonize 5s infinite;
 }
 
 .header__navbar {
@@ -37,10 +38,12 @@ body {
     margin-right: 1rem;
     font-size: 1.2rem;
     transition: .4s;
+    display: inline-block;
 }
 
 .header__navleft a:hover {
     color: #00ccff;
+    transform: scale(1.1);
     
 }
 
@@ -54,9 +57,18 @@ body {
     margin-left: 1rem;
     width: 1.2rem;
 }
-/* .header__heart {
-    
-} */
+
+.header__heart {
+    line-height: 0.8;
+    font-size: 2rem;
+    display: inline-block;
+    transition: all .5s;
+    animation: beat 1s infinite;
+}
+
+.header__heart:hover {
+    transform: scale(1.7);
+}
 
                     /* SECTION INTRODUCTION */
 
@@ -101,11 +113,21 @@ figcaption {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.gallery__img img{
+    display: inline-block;
+    transition: all .5s;
+}
+
+.gallery__img img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
 .gallery__img img:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     /* On oblige l'image à sagrandir au dela de sa taille initiale */
     width: 100%;
+
 }
 
 .share {
@@ -142,4 +164,42 @@ footer {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
+}
+
+/* On nomme le frames apr le nom qu'on veut */
+@keyframes heartCameleonize {
+    0% {
+        color: yellowgreen;
+    }
+
+    15% {
+        color: #00ccff;
+    }
+
+    30% {
+        color: #004488;
+    }
+
+    60% {
+        color: #00ccff;
+    }
+
+    80%{
+        color: #add8e6;
+    }
+
+    100% {
+        color: yellowgreen;
+    }
+}
+
+@keyframes beat {
+    0%, 16%, 50% {
+        transform: scale(1);
+    }
+
+    8%, 32%{
+        transform: scale(1.2);
+    }
+    
 }
